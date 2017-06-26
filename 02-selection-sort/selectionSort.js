@@ -12,6 +12,12 @@ const swap = (array, firstIndex, secondIndex) => {
   array[secondIndex] = temp;
 };
 
+/**
+ * Sorts an array in place based on a giving comparator function, using a selection sort algorithm (O(n^2))
+ * @param  {Array}    array                    The Array to sort
+ * @param  {Function} [compare=(a, b) => a -b] The comparator function
+ * @return {Array}                             Returns the sorted Array
+ */
 const selectionSort = (array, compare = (a, b) => a - b) => {
 
   let minIndex = 0;
