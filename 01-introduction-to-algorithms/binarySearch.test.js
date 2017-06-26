@@ -5,7 +5,7 @@
 
 const binarySearch = require('./binarySearch');
 
-it('binarySearch', function() {
+it(`binarySearch`, function() {
 
   const len   = 1e5;
   const array = Array.from(Array(len), (item, i) => i + 1);
