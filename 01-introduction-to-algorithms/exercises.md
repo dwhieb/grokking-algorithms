@@ -11,10 +11,10 @@
 
 2. Suppose you double the size of the list. What's the maximum number of steps now?
 
-  If you double the size of the list to 256 name, the maximum number of steps it would take to find a name in the list would be `log_2(256)` or `8`.
+    If you double the size of the list to 256 name, the maximum number of steps it would take to find a name in the list would be `log_2(256)` or `8`.
 
-  ```
-  log_2(256) = x
-  2^x = 128
-  2^x = 8
-  ```
+    ```
+    log_2(256) = x
+    2^x = 128
+    2^x = 8
+    ```
