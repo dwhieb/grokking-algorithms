@@ -1,5 +1,6 @@
 /* eslint-disable
   func-names,
+  no-console,
   prefer-arrow-callback,
 */
 
@@ -11,6 +12,9 @@ it(`binarySearch`, function() {
   const array = Array.from(Array(len), (item, i) => i + 1);
   const num   = Math.floor(Math.random() * len);
 
-  expect(binarySearch(array, num)).toBe(num - 1);
+  console.time(`\nbinarySearch`);
+  const result = binarySearch(array, num);
+  console.timeEnd(`\nbinarySearch`);
+  expect(result).toBe(num - 1);
 
 });
