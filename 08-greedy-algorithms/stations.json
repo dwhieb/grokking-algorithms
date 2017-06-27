@@ -1,0 +1,7 @@
+{
+  "kone":   ["id", "nv", "ut"],
+  "ktwo":   ["wa", "id", "mt"],
+  "kthree": ["or", "nv", "ca"],
+  "kfour":  ["nv", "ut"],
+  "kfive":  ["ca", "az"]
+}
