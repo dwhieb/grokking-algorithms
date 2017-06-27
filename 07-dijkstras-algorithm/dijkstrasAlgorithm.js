@@ -6,14 +6,14 @@
  * @example
  *const graph = {
     start: {
-      A:      6,
-      B:      2,
+      A: 6,
+      B: 2,
     },
     A: {
       finish: 1,
     },
     B: {
-      A:      3,
+      A: 3,
       finish: 5,
     },
     finish: {},
@@ -47,6 +47,7 @@ const dijkstrasAlgorithm = (graph, start = Object.keys(graph)[0]) => {
 
   Object.keys(graph).forEach(node => costs.set(node, Infinity));
   Object.entries(graph[start]).forEach(([node, cost]) => costs.set(node, cost));
+  costs.set(start, 0);
 
   let node = getCheapestNode();
 
