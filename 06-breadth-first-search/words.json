@@ -1,0 +1,8 @@
+{
+  "cab": ["cat", "car"],
+  "mat": ["bat"],
+  "cat": ["mat", "bat"],
+  "car": ["cat", "bar"],
+  "bat": [],
+  "bar": ["bat"]
+}
