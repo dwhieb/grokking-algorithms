@@ -19,3 +19,15 @@ For each of these algorithms, say whether it’s a greedy algorithm or not.
 5. Dijkstra's Algorithm
 
   > Dijkstra's Algorithm is a greedy algorithm, because at each step it checks the shortest/cheapest node first.
+
+6. A postman needs to deliver to 20 homes. He needs to find the shortest route that goes to all 20 homes. Is this an NP-complete problem?
+
+  > Yes, this is an NP-complete problem because it involves finding the shortest path between several points, rather than just two.
+
+7. Finding the largest clique in a set of people (a clique is a set of people who all know each other). Is this an NP-complete problem?
+
+  > Yes, this is an NP-complete problem because it is a type of set-covering problem.
+
+8. You’re making a map of the USA, and you need to color adjacent states with different colors. You have to find the minimum number of colors you need so that no two adjacent states are the same color. Is this an NP-complete problem?
+
+  > Yes, this is an NP-complete problem, because it requires calculating every possible combination of states and colors.
