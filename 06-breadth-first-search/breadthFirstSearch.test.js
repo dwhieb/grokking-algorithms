@@ -15,7 +15,8 @@ it(`breadthFirstSearch: names`, function() {
   const result = breadthFirstSearch(names, item => item.endsWith(`m`), `you`);
   console.timeEnd(`\nbreadthFirstSearch (names)`);
 
-  expect(result).toBe(`thom`);
+  expect(result.match).toBe(`thom`);
+  expect(result.distance).toBe(2);
 
 });
 
@@ -27,7 +28,8 @@ it(`breadthFirstSearch: race`, function() {
   const result = breadthFirstSearch(race, item => item === finish, 0);
   console.timeEnd(`\nbreadthFirstSearch (race)`);
 
-  expect(result).toBe(finish);
+  expect(result.match).toBe(finish);
+  expect(result.distance).toBe(2);
 
 });
 
@@ -37,7 +39,8 @@ it(`breadthFirstSearch: words`, function() {
   const result = breadthFirstSearch(words, item => item === `bat`, `cab`);
   console.timeEnd(`\nbreadthFirstSearch (words)`);
 
-  expect(result).toBe(`bat`);
+  expect(result.match).toBe(`bat`);
+  expect(result.distance).toBe(2);
 
 });
 
@@ -47,6 +50,6 @@ it(`breadthFirstSearch: no match`, function() {
   const result = breadthFirstSearch(words, item => item === `Zelda`);
   console.timeEnd(`\nbreadthFirstSearch (no match)`);
 
-  expect(result).toBe(null);
+  expect(result.match).toBe(null);
 
 });
